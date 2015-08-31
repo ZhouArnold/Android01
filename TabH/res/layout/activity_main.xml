@@ -1,0 +1,276 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabhost"
+      android:background="#ffffff"
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent">   
+  
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+   <LinearLayout
+     android:id="@+id/tab1"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout android:orientation="vertical" 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	<LinearLayout android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:layout_marginTop="10px">
+        	<LinearLayout android:layout_width="wrap_content"
+        	    android:layout_marginTop="5px"
+        		android:layout_height="wrap_content">
+        		<EditText android:singleLine="true"
+            		android:layout_width="345px"
+        			android:layout_height="60px"
+        			android:hint="输入查询商品"
+        			android:layout_marginLeft="5px"
+        			/>
+       		</LinearLayout>
+        	<LinearLayout android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="5px"
+        		android:orientation="horizontal">
+        			<ImageView android:layout_width="130px"
+            			android:layout_height="54px"
+            			android:src="@drawable/sousuo"/>
+        	</LinearLayout>
+    	</LinearLayout>
+    	<ImageView 
+    	    
+    	    android:id="@+id/show"
+        		android:layout_width="fill_parent"
+        		android:layout_height="220px"
+        		android:scaleType="centerCrop"
+        		android:src="@drawable/lunbo1"
+        		android:layout_gravity="center"
+        		android:layout_marginTop="8px"/>
+    	<TextView android:id="@+id/textb"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:text="今日推荐"
+    	    android:textSize="8pt"
+    	    android:textColor="#467500"
+    	    android:layout_marginTop="20px"
+    	    android:layout_marginLeft="20px"/>
+    	<ImageView android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:src="@drawable/line"
+    	    android:layout_marginTop="10px"/>
+    	<LinearLayout android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal"
+    	    android:layout_marginTop="20px">
+    	    <ImageView android:src="@drawable/a1"
+    	        android:id="@+id/jinrituijian"
+    	       
+        		android:layout_width="100px"
+    			android:layout_height="100px"
+    			android:adjustViewBounds="true"
+    			android:layout_gravity="center_vertical"
+    			android:layout_marginLeft="10px"
+    			android:background="@drawable/imagebj"/>
+    		<LinearLayout android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:orientation="vertical"
+        		android:layout_marginLeft="20px"
+        		android:layout_marginTop="10px">
+        		<TextView android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:text="包菜"
+            		android:textColor="#000000"
+            		android:textSize="7pt"/>
+        		<TextView android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:text="单价：¥3.8"
+            		android:textColor="#FF0000"
+            		android:textSize="6pt"
+            		android:layout_marginTop="5px"/>
+        		<TextView android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:text="上架时间：2013-12-4"
+            		android:layout_marginTop="5px"
+            		android:textSize="5pt"
+            		android:textColor="#696969"/>
+    		</LinearLayout>
+    	</LinearLayout>
+    	<TextView
+                android:layout_width="fill_parent"
+                android:layout_height="90px"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:text="@string/baocai"
+				android:textColor="#696969"/>
+   </LinearLayout>
+    
+</LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/mylist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="80px"
+                        android:background="#ffffff"
+                        android:divider="#cccccc"
+                        android:dividerHeight="1px" />
+                </LinearLayout>
+
+                <RelativeLayout 
+                    android:id="@+id/tab3" 
+                    android:layout_width="match_parent"
+    android:background="#ffffff"
+   
+    android:layout_marginBottom="90px"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listViewgouwuche"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  
+        android:layout_marginBottom="100px">
+    </ListView>
+
+    <Button
+        android:id="@+id/qingkonggouwuche"
+        android:layout_width="215px"
+        android:layout_height="80px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10px" 
+        android:background="#ff0000"
+        android:text="清空购物车"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/jiesuananniu"
+        android:layout_width="215px"
+        android:layout_height="80px"
+        android:layout_alignParentBottom="true"
+      	android:layout_marginLeft="255px" 
+        android:background="#ff9900"
+        
+        android:text="结算"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+                     <Button
+        android:id="@+id/Button01"
+        android:layout_width="400px"
+        android:layout_height="60px"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="16dp"
+        android:background="#EAC100"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="400px"
+        android:layout_height="60px"
+        android:layout_alignLeft="@+id/Button01"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="53dp"
+        android:background="#467500"
+        android:text="登陆" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="欢迎来到登陆界面"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="31dp"
+        android:text="用户名："
+        android:textColor="#000000"
+        android:textSize="25px" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="35dp"
+        android:text="密    码："
+        android:textColor="#000000"
+        android:textSize="25px" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="290px"
+        android:layout_height="wrap_content"
+     	
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/editText2"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="290px"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+     
+        
+        android:layout_toRightOf="@+id/TextView01"
+        android:ems="10"
+        android:inputType="textPassword" />
+                    
+                   
+                </RelativeLayout>
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="#467500" >
+            </TabWidget>
+
+    
+
+        </RelativeLayout>
+
+</TabHost>

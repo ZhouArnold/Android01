@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:text="商品详情"
+        android:background="#467500"
+        android:gravity="center"
+        android:textSize="10pt"
+        android:textColor="#FFFFFF"/>
+    <LinearLayout
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/imagebj"
+        android:layout_marginTop="15px">
+//商品图片
+			<ImageView android:layout_width="180px"
+        		android:layout_height="180px"
+        		android:src="@drawable/a1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50px"
+        android:orientation="horizontal"
+        android:background="#e6e6fa"
+        android:layout_marginTop="15px">
+//商品单价		
+		<TextView android:layout_width="wrap_content"
+        	android:layout_height="30px"
+        	android:text="包菜  ¥3.8元/kg"
+        	android:textSize="7pt"
+        	android:textColor="#FF0000"
+        	android:gravity="center"
+        	android:layout_gravity="center_vertical"
+        	android:layout_marginLeft="20px"/>
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="30px"
+		    android:layout_marginLeft="180px"
+		    android:gravity="center"
+		    android:text="2013-12-4"
+		    android:textColor="#666666"
+		    android:layout_gravity="center_vertical"
+		    android:textSize="5pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F0F9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:layout_weight="13.00"
+            android:background="@drawable/viewbg1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:text="商品信息"
+                android:textColor="#000000"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:src="@drawable/line" />
+//商品名称
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:text="[包菜]" />
+//商品介绍
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="90px"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:text="@string/baocai"
+                android:textColor="#FF0000" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:src="@drawable/line" />
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="35px"
+                android:orientation="horizontal">
+                <ImageView android:layout_width="25px"
+                	android:layout_height="25px"
+                	android:src="@drawable/fuwu"
+                	android:scaleType="centerCrop"
+                	android:layout_marginLeft="10px"
+                	android:layout_marginTop="10px"/>
+            	<TextView android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:text="服务：食行全程配送服务，保证食材新鲜到达"
+                	android:textSize="5pt"
+                	android:layout_gravity="center_vertical"
+                	android:layout_marginLeft="10px"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="35px"
+                android:orientation="horizontal">
+                <ImageView android:layout_width="25px"
+                	android:layout_height="25px"
+                	android:src="@drawable/chengnuo"
+                	android:scaleType="centerCrop"
+                	android:layout_marginLeft="10px"
+                	android:layout_marginTop="5px"/>
+            	<TextView android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:text="承诺：24小时退换货"
+                	android:textSize="5pt"
+                	android:layout_marginLeft="10px"
+                	android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="80px"
+	    android:orientation="horizontal">"
+
+		<TextView
+		    android:layout_width="120px"
+		    android:layout_height="80px"
+		    android:background="#e6e6fa"
+		    android:text="收藏"
+		    android:textSize="8pt"
+		    android:textColor="#008000"
+		    android:gravity="center"/>
+
+		<TextView
+		    android:id="@+id/jiarugouwuche"
+		    android:layout_width="240px"
+		    android:layout_height="80px"
+		    android:background="#FF0000"
+		    android:text="加入购物车"
+		    android:textSize="8pt"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"/>
+
+		<TextView
+		    android:id="@+id/jiesuan"
+		    android:layout_width="120px"
+		    android:layout_height="80px" 
+		    android:background="#e6e6fa"
+		    android:text="结算"
+		    android:textSize="8pt"
+		    android:textColor="#008000"
+		    android:gravity="center"/>
+
+	</LinearLayout>
+</LinearLayout>

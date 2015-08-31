@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/gouwuche"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_marginTop="70px"
+    android:layout_marginBottom="90px"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listViewgouwuche"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  
+        android:layout_marginBottom="100px">
+    </ListView>
+
+    <Button
+        android:id="@+id/qingkonggouwuche"
+        android:layout_width="215px"
+        android:layout_height="80px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10px" 
+        android:background="#ff0000"
+        android:text="清空购物车"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/jiesuananniu"
+        android:layout_width="215px"
+        android:layout_height="80px"
+        android:layout_alignParentBottom="true"
+      	android:layout_marginLeft="255px" 
+        android:background="#ff9900"
+        
+        android:text="结算"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

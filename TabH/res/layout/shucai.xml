@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+	<TextView android:layout_width="fill_parent"
+	    android:layout_height="70px"
+	    android:text="新鲜蔬菜"
+	    android:textSize="10pt"
+    	android:gravity="center"
+    	android:background="#467500"
+    	android:textColor="#FFFFFF"/>
+	<ListView android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:dividerHeight="1px"
+    	android:divider="#999999"
+    	android:id="@+id/shucai"
+    	android:background="#d3d3d3">
+	</ListView>
+</LinearLayout>
